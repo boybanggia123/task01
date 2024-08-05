@@ -1,7 +1,12 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import "./globals.css";
-
+import BoostrapClien from "../app/components/BoostrapClient";
+import Header from "./header";
+import Footer from "./footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -16,7 +21,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}>
+        <Header />
+        {children}
+        <Footer />
+       <BoostrapClien/>
+        </body>
+       
     </html>
   );
 }

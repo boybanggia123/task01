@@ -79,29 +79,113 @@
   margin: 0;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.form-search {
+  position: relative;
+  margin-left: 20rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.form-search input {
+  padding: 8px 25px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.form-search input:focus {
+  outline: none; /* Loại bỏ outline mặc định */
+  box-shadow: none; /* Loại bỏ box-shadow mặc định */
+  border-color: initial; /* Đặt lại màu border mặc định */
+}
+.form-search i {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (max-width: 768px) {
+  .form-search {
+    width: 100%;
   }
 }
+
+.sellmain{
+  position: relative;
+}
+.sell{
+   position: absolute;
+   right: 0;
+   padding: 25px 0px;
+   width: 15%;
+   background-color: #000;
+   color: #fff; ;
+   border: none;
+}
+
+@media (max-width: 768px) {
+ .sell{
+   width: 100%;
+   position: relative;
+   top: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: 20px;
+ }
+}
+
+.show-main{
+  position: relative;
+}
+
+.show-sup{
+  position: absolute;
+  right: 35%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: #fff;
+}
+@media(max-width:767px){
+  .show-sup{
+    position: absolute;
+    right: 30%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    background-color: #fff;
+  }
+}
+
+.card-custom {
+  width: 18rem; /* Tùy chỉnh chiều rộng card */
+}
+
+.img-sup{
+  position: relative;
+}
+.img-sup button{
+  position: absolute;
+  top: 80%;
+  right: 60%;
+  font-size: 10;
+  color: #fff;
+  background-color: #000;
+  font-size: 10px;
+  padding: 5px 15px;
+}
+.titel {
+    font-size: 12px;
+}
+.titel p{
+  padding-top: 10px;
+}
+.titel .sale{
+  border: #000 solid 1px ;
+  padding: 8px 10px;
+  background-color: #fff;
+}
+.shop-me{
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+
