@@ -79,75 +79,95 @@
   margin: 0;
 }
 
+/* CSS cho thanh tìm kiếm */
 .form-search {
   position: relative;
-  margin-left: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .form-search input {
   padding: 8px 25px;
   width: 100%;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
 .form-search input:focus {
-  outline: none; /* Loại bỏ outline mặc định */
-  box-shadow: none; /* Loại bỏ box-shadow mặc định */
-  border-color: initial; /* Đặt lại màu border mặc định */
+  outline: none;
+  box-shadow: none;
+  border-color: initial;
 }
+
 .form-search i {
   position: absolute;
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
+  color: #333;
 }
 
 @media (max-width: 768px) {
   .form-search {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form-search input {
+    padding: 8px 15px;
+  }
+
+  .form-search i {
+    right: 0.5rem;
   }
 }
 
-.sellmain{
+.sellmain {
   position: relative;
 }
-.sell{
-   position: absolute;
-   right: 0;
-   padding: 25px 0px;
-   width: 15%;
-   background-color: #000;
-   color: #fff; ;
-   border: none;
+.sell {
+  position: absolute;
+  right: 0;
+  padding: 25px 0px;
+  width: 15%;
+  background-color: #000;
+  color: #fff;
+  border: none;
 }
 
 @media (max-width: 768px) {
- .sell{
-   width: 100%;
-   position: relative;
-   top: 0;
-   left: 0;
-   right: 0;
-   margin-bottom: 20px;
- }
+  .sell {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+  }
 }
 
-.show-main{
+.show-main {
   position: relative;
+  overflow: hidden; /* Đảm bảo phần tử con không tràn ra ngoài */
 }
 
-.show-sup{
+.show-sup {
   position: absolute;
-  right: 35%;
-  top: 70%;
-  transform: translate(-50%, -50%);
+  top: 70%; /* Điều chỉnh theo nhu cầu */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Căn giữa theo chiều ngang và dọc */
   padding: 1rem;
   background-color: #fff;
+  border: none; /* Xóa bỏ viền nếu cần */
 }
-@media(max-width:767px){
-  .show-sup{
+
+@media (max-width: 767px) {
+  .show-sup {
     position: absolute;
-    right: 30%;
-    top: 70%;
+    top: 70%; /* Điều chỉnh theo nhu cầu */
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 1rem;
     background-color: #fff;
@@ -158,10 +178,11 @@
   width: 18rem; /* Tùy chỉnh chiều rộng card */
 }
 
-.img-sup{
+.img-sup {
   position: relative;
+  overflow: hidden;
 }
-.img-sup button{
+.img-sup button {
   position: absolute;
   top: 80%;
   right: 60%;
@@ -172,20 +193,34 @@
   padding: 5px 15px;
 }
 .titel {
-    font-size: 12px;
+  font-size: 12px;
 }
-.titel p{
+.titel p {
   padding-top: 10px;
 }
-.titel .sale{
-  border: #000 solid 1px ;
+.titel .sale {
+  border: #000 solid 1px;
   padding: 8px 10px;
   background-color: #fff;
 }
-.shop-me{
+.shop-me {
   padding: 10px;
   background-color: #000;
   color: #fff;
 }
 
+/* CSS detail */
 
+.b-detail {
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .b-detail {
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
