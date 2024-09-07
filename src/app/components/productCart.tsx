@@ -38,7 +38,13 @@ export default function ProductCart() {
                 alt={product.product_title}
               />
               <button className="show-sup fw-bolder ">
-                <Link href={`/chitiet/${product.id}`}> Show Now</Link>
+                <Link
+                  className="link-underline-light text-black"
+                  href={`/chitiet/${product.id}`}
+                >
+                  {" "}
+                  Show Now
+                </Link>
               </button>
             </div>
           </div>
