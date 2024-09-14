@@ -26,7 +26,12 @@ const withRegistration = (
   return function EnhancedComponent(
     props: Omit<
       WrappedComponentProps,
-      "handleRegistration" | "otpSent" | "error" | "handleOtpSubmit"
+      | "handleRegistration"
+      | "otpSent"
+      | "error"
+      | "handleOtpSubmit"
+      | "otp"
+      | "setOtp"
     >
   ) {
     const [error, setError] = useState<string>("");

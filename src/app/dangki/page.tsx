@@ -16,15 +16,12 @@ function Registration({
   otpSent,
   error,
   handleOtpSubmit, // Thêm handleOtpSubmit
-  otp,
-  setOtp, // Thêm setOtp
-}: {
+}: // Thêm setOtp
+{
   handleRegistration: (formData: RegistrationFormData) => Promise<void>;
   otpSent: boolean;
   error: string;
   handleOtpSubmit: (otp: string) => Promise<void>; // Thay đổi kiểu
-  otp: string; // Thêm otp
-  setOtp: React.Dispatch<React.SetStateAction<string>>; // Thêm setOtp
 }) {
   const [formData, setFormData] = useState<RegistrationFormData>({
     name: "",
